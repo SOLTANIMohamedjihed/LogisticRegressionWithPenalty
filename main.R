@@ -26,7 +26,7 @@ DATa$Intl.Charge <- as.numeric(DATa$Intl.Charge)
 
 DATa$`Churn?` <- as.factor(DATa$`Churn?`)
 
-## COR <- cor(DATa)
+## COR <- cor(DATa[,2:14])
 ## corrplot(COR, method="circle")
 
 ScDAT <- scale(DATa[,2:14], center = TRUE , scale = TRUE)
